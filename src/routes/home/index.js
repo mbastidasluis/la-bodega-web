@@ -3,6 +3,7 @@ import {
   AnnotationIcon,
   GlobeAltIcon,
   LightningBoltIcon,
+  LockClosedIcon,
   ScaleIcon,
 } from '@heroicons/react/outline';
 
@@ -38,11 +39,11 @@ const Home = () => {
   return (
     <>
       {/* HERO SECTION*/}
-      <div className="relative bg-white overflow-hidden">
-        <div className="max-w-7xl mx-auto">
-          <div className="relative z-10 pb-8 bg-white sm:pb-16 md:pb-20 lg:max-w-2xl lg:w-full lg:pb-28 xl:pb-32">
+      <div className="bg-indigo-100 overflow-hidden px-4 md:px-6 lg:px-8 xl:px-0 min-h-screen">
+        <div class="min-h-screen lg:flex items-center justify-center max-w-7xl mx-auto">
+          <div className="relative lg:pl-8 z-10 bg-indigo-100 lg:bg-white lg:max-w-4xl lg:w-full lg:pb-28 lg:ml-0 xl:pb-32">
             <svg
-              className="hidden lg:block absolute right-0 inset-y-0 h-full w-48 text-white transform translate-x-1/2"
+              className="hidden lg:block absolute right-0 inset-y-0 h-full w-48 text-indigo-100 lg:text-white transform translate-x-1/2"
               fill="currentColor"
               viewBox="0 0 100 100"
               preserveAspectRatio="none"
@@ -51,39 +52,39 @@ const Home = () => {
               <polygon points="50,0 100,0 50,100 0,100" />
             </svg>
 
-            <main className="mt-10 mx-auto max-w-7xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28">
-              <div className="sm:text-center lg:text-left">
-                <h1 className="text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl">
-                  <span className="block xl:inline">La Bodega</span>{' '}
-                  <span className="block text-indigo-600 xl:inline">WEB</span>
+            <main className="lg:my-auto max-w-4xl px-4">
+              <div className="text-center lg:text-left pt-10">
+                <h1 className="text-4xl tracking-tight font-extrabold text-indigo-900 sm:text-5xl md:text-6xl xl:py-8">
+                  <span className="block my-6">La Bodega</span>{' '}
+                  <span className="block text-indigo-600 my-6">WEB</span>
                 </h1>
-                <p className="mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
-                  Los mejores productos, al mejor precio en la comodidad de tu
-                  celular.
+                <p className="mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0 relative z-20">
+                  Conoce nuestra oferta de productos y servicios. Al alcance de
+                  tu mano.
                 </p>
-                <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
-                  <div className="rounded-md shadow">
+                <div className="my-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
+                  <div>
                     <a
                       href="/products"
-                      className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 md:py-4 md:text-lg md:px-10"
+                      className="group relative w-full flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
                     >
-                      nuetros productos
+                      productos
                     </a>
                   </div>
                 </div>
               </div>
             </main>
           </div>
-        </div>
-        <div className="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
-          <img
-            className="h-56 w-full object-cover sm:h-72 md:h-96 lg:w-full lg:h-full"
-            src="https://images.unsplash.com/photo-1607349913338-fca6f7fc42d0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1920&q=80"
-            alt=""
-          />
+
+          <div class="max-w-xl xl:max-w-2xl mx-auto">
+            <img
+              className="w-full h-1/3 object-cover object-bottom lg:object-center xl:object-right"
+              src="/assets/images/ZpIskW1Tuvc-unsplash.jpg"
+              alt=""
+            />
+          </div>
         </div>
       </div>
-
       {/* FEATURES SECTION*/}
       {/*
       <div className="py-12 bg-white">
