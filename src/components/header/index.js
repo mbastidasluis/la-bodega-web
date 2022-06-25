@@ -7,10 +7,8 @@ import style from './style.css';
 
 export default function () {
   const navigation = [
-    { name: 'Dashboard', href: '#', current: true },
-    { name: 'Team', href: '#', current: false },
-    { name: 'Projects', href: '#', current: false },
-    { name: 'Calendar', href: '#', current: false },
+    { name: 'Home', href: '/', current: true },
+    { name: 'Products', href: '/products', current: false },
   ];
 
   const classNames = (...classes) => classes.filter(Boolean).join(' ');

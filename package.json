@@ -16,6 +16,7 @@
   "devDependencies": {
     "@headlessui/react": "^1.6.4",
     "@heroicons/react": "^1.0.6",
+    "@tailwindcss/aspect-ratio": "^0.3.0",
     "autoprefixer": "^10.4.7",
     "enzyme": "^3.10.0",
     "enzyme-adapter-preact-pure": "^2.0.0",
