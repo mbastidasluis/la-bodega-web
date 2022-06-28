@@ -39,10 +39,7 @@ const Products = () => {
     <>
       <Loader open={loading} />
       <div className="bg-white">
-        {/*<div>
-          <PlusCircleIcon class="h-10 w-10 text-indigo-700" />
-        </div>
-        */}
+        <PlusCircleIcon class="h-10 w-10 text-indigo-700 fixed bottom-0 right-0" />
         <div className="max-w-2xl mx-auto px-4 sm:px-6 lg:max-w-7xl lg:px-8">
           <div className="mt-6 grid grid-cols-1 gap-y-10 gap-x-6 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8">
             {products.map((product) => (
