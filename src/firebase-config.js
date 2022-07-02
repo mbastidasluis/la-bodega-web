@@ -5,6 +5,11 @@ import { getFirestore } from 'firebase/firestore';
 
 // added configuration for development and deployment environme
 let firebaseConfig;
+
+console.log('process', !!process);
+console.log('process', process);
+console.log('env', process?.env);
+
 if (process && process.env) {
   firebaseConfig = {
     apiKey: process.env.apiKey,
