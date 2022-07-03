@@ -1,14 +1,9 @@
 // Import the functions you need from the SDKs you need
 import { initializeApp } from 'firebase/app';
-import { getAnalytics } from 'firebase/analytics';
 import { getFirestore } from 'firebase/firestore';
 
 // added configuration for development and deployment environme
 let firebaseConfig;
-
-console.log('process', !!process);
-console.log('process', process);
-console.log('env', process?.env);
 
 if (process && process.env) {
   firebaseConfig = {
@@ -26,7 +21,6 @@ if (process && process.env) {
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
-const analytics = getAnalytics(app);
 const db = getFirestore(app);
 
 export { app, analytics, db };
