@@ -1,6 +1,6 @@
 {
-  "name": "my-project",
-  "short_name": "my-project",
+  "name": "La Bodega Web",
+  "short_name": "La Bodega Web",
   "start_url": "/",
   "display": "standalone",
   "orientation": "portrait",

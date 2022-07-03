@@ -6,6 +6,10 @@ import { getFirestore } from 'firebase/firestore';
 let firebaseConfig;
 
 if (process && process.env) {
+  const req = require('../pro.appConfig.json');
+  console.log('req', req);
+  console.log('process', process);
+
   firebaseConfig = {
     apiKey: process.env.PREACT_APP_APIKEY,
     authDomain: process.env.PREACT_APP_AUTHDOMAIN,
