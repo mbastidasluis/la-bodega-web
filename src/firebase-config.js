@@ -23,4 +23,4 @@ if (process && process.env) {
 const app = initializeApp(firebaseConfig);
 const db = getFirestore(app);
 
-export { app, analytics, db };
+export { app, db };
