@@ -7,13 +7,13 @@ let firebaseConfig;
 
 if (process && process.env) {
   firebaseConfig = {
-    apiKey: process.env.apiKey,
-    authDomain: process.env.authDomain,
-    projectId: process.env.projectId,
-    storageBucket: process.env.storageBucket,
-    messagingSenderId: process.env.messagingSenderId,
-    appId: process.env.appId,
-    measurementId: process.env.measurementId,
+    apiKey: process.env.PREACT_APP_APIKEY,
+    authDomain: process.env.PREACT_APP_AUTHDOMAIN,
+    projectId: process.env.PREACT_APP_PROJECTID,
+    storageBucket: process.env.PREACT_APP_STORAGEBUCKET,
+    messagingSenderId: process.env.PREACT_APP_MESSAGINGSENDERID,
+    appId: process.env.PREACT_APP_APPID,
+    measurementId: process.env.PREACT_APP_MEASUREMENTID,
   };
 } else {
   firebaseConfig = require('../pro.appConfig.json');

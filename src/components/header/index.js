@@ -49,7 +49,6 @@ export default function () {
                 <div className="hidden sm:block sm:ml-6">
                   <div className="flex space-x-4">
                     {navigation.map((item) => {
-                      console.log(item.current);
                       return (
                         <Link
                           onClick={() => setCurrent(item.name)}
