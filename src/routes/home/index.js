@@ -6,6 +6,7 @@ import {
   LockClosedIcon,
   ScaleIcon,
 } from '@heroicons/react/outline';
+import { useState } from 'preact/hooks';
 
 const Home = () => {
   // TODO make static or add from db
