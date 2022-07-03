@@ -2,6 +2,9 @@
 import { initializeApp } from 'firebase/app';
 import { getFirestore } from 'firebase/firestore';
 
+// force save env variables to process env
+require('dotenv').config();
+
 // added configuration for development and deployment environme
 let firebaseConfig;
 
